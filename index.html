@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shoxjaxon - Freelancer Web Dasturchi. O'zbekistonda zamonaviy veb-saytlar, landing sahifalar va Telegram botlar yaratish xizmati.">
+  <title>Shoxjaxon | Freelancer Web Dasturchi</title>
+  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background elements -->
+  <canvas id="particle-canvas"></canvas>
+  <div class="ambient-glows">
+    <div class="glow-sphere glow-1"></div>
+    <div class="glow-sphere glow-2"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#home" class="logo">
+        Shoxjaxon<span class="logo-dot"></span>
+      </a>
+      
+      <nav class="nav" id="nav-menu">
+        <ul>
+          <li><a href="#home" class="nav-link active">Asosiy</a></li>
+          <li><a href="#skills" class="nav-link">Ko'nikmalar</a></li>
+          <li><a href="#services" class="nav-link">Xizmatlar</a></li>
+          <li><a href="#projects" class="nav-link">Loyihalar</a></li>
+          <li><a href="#contact" class="nav-link nav-cta">Bog'lanish</a></li>
+        </ul>
+      </nav>
+      
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-wrapper">
+        <div class="hero-content reveal">
+          <div class="hero-badge">
+            <i class="fas fa-circle-dot"></i> Buyurtmalar uchun ochiq
+          </div>
+          <h1 class="hero-title">
+            Salom, men <br><span class="name">Shoxjaxon</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            Freelance Web Developer
+          </h2>
+          <p class="hero-desc">
+            Men O'zbekistonda joylashganman. Mahalliy va xalqaro bizneslar uchun zamonaviy veb-saytlar, yuqori tezlikda ishlovchi landing sahifalar va murakkab biznes jarayonlarini avtomatlashtiruvchi mukammal Telegram botlar ishlab chiqaman.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Bog'lanish <i class="fas fa-arrow-right"></i></a>
+            <a href="#projects" class="btn btn-secondary">Loyihalarni ko'rish</a>
+          </div>
+        </div>
+        
+        <div class="hero-visual reveal reveal-delay-2">
+          <!-- Animated Tech Orbits -->
+          <div class="tech-orbits">
+            <div class="orbit-node node-1" title="Python">
+              <i class="fab fa-python"></i>
+            </div>
+            <div class="orbit-node node-2" title="Docker">
+              <i class="fab fa-docker"></i>
+            </div>
+            <div class="orbit-node node-3" title="Telegram Bot">
+              <i class="fab fa-telegram"></i>
+            </div>
+          </div>
+          <!-- Morphing Central Sphere -->
+          <div class="visual-sphere">
+            <div class="visual-sphere-inner">
+              <i class="fas fa-code"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Ko'nikmalarim</span>
+        <h2 class="section-title">Texnologiyalar va <span>Mahorat</span></h2>
+      </div>
+      
+      <div class="skills-grid">
+        <!-- Skill 1 -->
+        <div class="skill-card glass-card reveal">
+          <div class="skill-icon-box">
+            <i class="fab fa-python"></i>
+          </div>
+          <div class="skill-info">
+            <h3 class="skill-name">Python</h3>
+            <p class="skill-desc">Murakkab skriptlar, tizimlar va ma'lumotlar bilan ishlash.</p>
+          </div>
+        </div>
+        
+        <!-- Skill 2 -->
+        <div class="skill-card glass-card reveal reveal-delay-1">
+          <div class="skill-icon-box">
+            <i class="fas fa-fire"></i>
+          </div>
+          <div class="skill-info">
+            <h3 class="skill-name">Flask</h3>
+            <p class="skill-desc">Kengayuvchi va tezkor backend xizmatlar, RESTful API-lar yaratish.</p>
+          </div>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="skill-card glass-card reveal reveal-delay-2">
+          <div class="skill-icon-box">
+            <i class="fab fa-telegram"></i>
+          </div>
+          <div class="skill-info">
+            <h3 class="skill-name">Telegram Bot</h3>
+            <p class="skill-desc">Biznes uchun avtomatlashtirilgan mukammal chat-bot tizimlari.</p>
+          </div>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="skill-card glass-card reveal">
+          <div class="skill-icon-box">
+            <i class="fab fa-docker"></i>
+          </div>
+          <div class="skill-info">
+            <h3 class="skill-name">Docker</h3>
+            <p class="skill-desc">Ilovalarni konteynerlarga joylash va barqaror ishlashni sozlash.</p>
+          </div>
+        </div>
+
+        <!-- Skill 5 -->
+        <div class="skill-card glass-card reveal reveal-delay-1">
+          <div class="skill-icon-box">
+            <i class="fab fa-html5"></i>
+          </div>
+          <div class="skill-info">
+            <h3 class="skill-name">HTML / CSS / JS</h3>
+            <p class="skill-desc">Moslashuvchan, tezkor va interaktiv zamonaviy foydalanuvchi interfeyslari.</p>
+          </div>
+        </div>
+
+        <!-- Skill 6 -->
+        <div class="skill-card glass-card reveal reveal-delay-2">
+          <div class="skill-icon-box">
+            <i class="fas fa-server"></i>
+          </div>
+          <div class="skill-info">
+            <h3 class="skill-name">VPS / Linux</h3>
+            <p class="skill-desc">Serverlarni sozlash, xavfsizlik choralarini ko'rish va deployment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Xizmatlarim</span>
+        <h2 class="section-title">Qanday yordam <span>bera olaman?</span></h2>
+      </div>
+      
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card glass-card reveal">
+          <div class="service-icon-wrapper">
+            <div class="service-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+          </div>
+          <h3 class="service-title">Landing Page</h3>
+          <p class="service-description">
+            Sizning mahsulotingiz yoki xizmatingiz uchun mijozlarni jalb qiluvchi, tez yuklanuvchi va konversiyasi yuqori bo'lgan bir sahifali veb-saytlar.
+          </p>
+          <ul class="service-list">
+            <li class="service-item"><i class="fas fa-check"></i> Moslashuvchan (Mobile friendly)</li>
+            <li class="service-item"><i class="fas fa-check"></i> SEO asoslari va optimallashtirish</li>
+            <li class="service-item"><i class="fas fa-check"></i> Zamonaviy dizayn va effektlar</li>
+          </ul>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card glass-card reveal reveal-delay-1">
+          <div class="service-icon-wrapper">
+            <div class="service-icon">
+              <i class="fab fa-telegram"></i>
+            </div>
+          </div>
+          <h3 class="service-title">Telegram Botlar</h3>
+          <p class="service-description">
+            Kataloglar, avtomatlashtirilgan savdolar, to'lov tizimlari va ma'lumotlar bazasiga ega bo'lgan murakkab va funksional Telegram botlar.
+          </p>
+          <ul class="service-list">
+            <li class="service-item"><i class="fas fa-check"></i> Payme, Click to'lov tizimlari</li>
+            <li class="service-item"><i class="fas fa-check"></i> Qulay ma'muriylashtirish paneli</li>
+            <li class="service-item"><i class="fas fa-check"></i> 24/7 serverda uzluksiz ishlash</li>
+          </ul>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card glass-card reveal reveal-delay-2">
+          <div class="service-icon-wrapper">
+            <div class="service-icon">
+              <i class="fas fa-cubes"></i>
+            </div>
+          </div>
+          <h3 class="service-title">Web Ilovalar</h3>
+          <p class="service-description">
+            Python/Flask texnologiyasi asosida ma'lumotlar bazasi, foydalanuvchilar avtorizatsiyasi va boshqaruv panellariga ega bo'lgan to'liq veb-tizimlar.
+          </p>
+          <ul class="service-list">
+            <li class="service-item"><i class="fas fa-check"></i> API interfeyslarini ishlab chiqish</li>
+            <li class="service-item"><i class="fas fa-check"></i> Ma'lumotlar bazasi loyihasi (SQL)</li>
+            <li class="service-item"><i class="fas fa-check"></i> VPS serverga xavfsiz o'rnatish</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Mening ishlarim</span>
+        <h2 class="section-title">So'nggi loyihalar <span>namunasi</span></h2>
+      </div>
+      
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card glass-card reveal">
+          <div class="project-media">
+            <div class="project-media-pattern"></div>
+            <div class="project-media-glow"></div>
+            <i class="fab fa-telegram project-media-icon"></i>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Telegram Bot</span>
+              <span class="project-tag">SQL</span>
+            </div>
+            <h3 class="project-title">E-Commerce Telegram Bot</h3>
+            <p class="project-desc">
+              Do'konlar uchun avtomatlashtirilgan savdo tizimi. Mahsulotlar katalogi, savatcha, buyurtmalarni boshqarish va to'lov tizimlari bilan integratsiyalashgan.
+            </p>
+            <a href="#contact" class="project-btn">Ko'rish <i class="fas fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass-card reveal reveal-delay-1">
+          <div class="project-media">
+            <div class="project-media-pattern"></div>
+            <div class="project-media-glow"></div>
+            <i class="fas fa-laptop-code project-media-icon"></i>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">HTML / CSS</span>
+              <span class="project-tag">JS</span>
+              <span class="project-tag">SEO</span>
+            </div>
+            <h3 class="project-title">Premium Landing Page</h3>
+            <p class="project-desc">
+              Mahalliy ishlab chiqaruvchi kompaniya mahsulotlarini targ'ib qilish uchun yaratilgan, animatsiyalarga boy va yuqori tezlikda ishlovchi bir sahifali veb-sayt.
+            </p>
+            <a href="#contact" class="project-btn">Ko'rish <i class="fas fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card glass-card reveal reveal-delay-2">
+          <div class="project-media">
+            <div class="project-media-pattern"></div>
+            <div class="project-media-glow"></div>
+            <i class="fas fa-database project-media-icon"></i>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">Flask</span>
+              <span class="project-tag">Docker</span>
+              <span class="project-tag">VPS</span>
+            </div>
+            <h3 class="project-title">SaaS Dashboard API</h3>
+            <p class="project-desc">
+              Biznes tahliliy ma'lumotlarni yig'ish, qayta ishlash va hisobotlarni shakllantirish uchun mo'ljallangan backend tizimi va xavfsiz boshqaruv paneli.
+            </p>
+            <a href="#contact" class="project-btn">Ko'rish <i class="fas fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <!-- Contact Info -->
+        <div class="contact-info-panel reveal">
+          <div class="contact-title-group">
+            <span class="section-subtitle">Bog'lanish</span>
+            <h2 class="section-title">Loyiha boshlaymizmi? <span>Aloqaga chiqing</span></h2>
+          </div>
+          <p class="contact-intro">
+            Sizda ajoyib loyiha g'oyasi bormi? Yoki biznesingizni avtomatlashtirish kerakmi? Quyidagi ma'lumotlar orqali menga yozing yoki Telegram orqali to'g'ridan-to'g'ri bog'laning.
+          </p>
+          
+          <div class="contact-details">
+            <!-- Location -->
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-location-dot"></i>
+              </div>
+              <div class="contact-meta">
+                <span>Joylashuv</span>
+                <p>O'zbekiston, Toshkent</p>
+              </div>
+            </div>
+            
+            <!-- Telegram Link -->
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fab fa-telegram"></i>
+              </div>
+              <div class="contact-meta">
+                <span>Telegram</span>
+                <a href="https://t.me/shoxa_devv" target="_blank" rel="noopener">@shoxa_devv</a>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-meta">
+                <span>Elektron Pochta</span>
+                <a href="mailto:info@shoxjaxon.uz">info@shoxjaxon.uz</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-links">
+            <a href="https://t.me/shoxa_devv" target="_blank" rel="noopener" class="social-btn" title="Telegram">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://t.me/shoxjaxon_metinov" target="_blank" rel="noopener" class="social-btn" title="Telegram Kanal">
+              <i class="fas fa-bullhorn"></i>
+            </a>
+            <a href="https://www.instagram.com/shoxa_devv?igsh=MWJ1Z2ZndDg5Z2M1bQ%3D%3D&utm_source=qr" target="_blank" rel="noopener" class="social-btn" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener" class="social-btn" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="contact-form-card glass-card reveal reveal-delay-1">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Ismingiz</label>
+              <div class="form-input-wrapper">
+                <input type="text" id="name" class="form-input" placeholder="Ismingizni kiriting" required>
+                <i class="fas fa-user"></i>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="tg-username" class="form-label">Telegram Username</label>
+              <div class="form-input-wrapper">
+                <input type="text" id="tg-username" class="form-input" placeholder="@username yoki telefon raqam" required>
+                <i class="fab fa-telegram"></i>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="message" class="form-label">Xabar Matni</label>
+              <div class="form-input-wrapper">
+                <textarea id="message" class="form-input" placeholder="Loyihangiz haqida qisqacha ma'lumot bering..." required></textarea>
+              </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+              Xabarni yuborish <i class="fas fa-paper-plane"></i>
+            </button>
+            
+            <div id="form-status" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <a href="#home" class="logo">
+          Shoxjaxon<span class="logo-dot"></span>
+        </a>
+        <div class="copyright">
+          &copy; 2026. Barcha huquqlar himoyalangan. <span>Shoxjaxon</span> tomonidan yaratildi.
+        </div>
+        <div class="back-to-top" id="back-to-top" title="Tepaga chiqish">
+          <i class="fas fa-arrow-up"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
