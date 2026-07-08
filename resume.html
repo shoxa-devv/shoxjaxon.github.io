@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metinov Shoxjaxon — Resume</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a0a0a'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700' font-size='18'%3ES%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    body{font-family:'Inter',sans-serif;font-size:14px;line-height:1.6;color:#1a1a1a;background:#fff;max-width:800px;margin:0 auto;padding:48px 40px}
+    .mono{font-family:'JetBrains Mono',monospace}
+
+    /* Header */
+    .r-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:32px;padding-bottom:24px;border-bottom:2px solid #1a1a1a}
+    .r-name{font-size:28px;font-weight:700;letter-spacing:-.03em;margin-bottom:4px}
+    .r-role{font-size:16px;color:#555;font-weight:500}
+    .r-contacts{text-align:right;font-size:12px;color:#555;display:flex;flex-direction:column;gap:4px}
+    .r-contacts a{color:#1a1a1a;text-decoration:none}
+    .r-contacts a:hover{text-decoration:underline}
+
+    /* Sections */
+    .r-section{margin-bottom:28px}
+    .r-section-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:#888;margin-bottom:14px;padding-bottom:6px;border-bottom:1px solid #e0e0e0}
+
+    /* Summary */
+    .r-summary{font-size:14px;color:#333;line-height:1.7;max-width:680px}
+
+    /* Skills grid */
+    .r-skills{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .r-skill-cat{font-size:12px;font-weight:600;color:#1a1a1a;margin-bottom:4px}
+    .r-skill-list{font-size:13px;color:#555}
+
+    /* Experience / Projects */
+    .r-entry{margin-bottom:20px}
+    .r-entry-header{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px}
+    .r-entry-title{font-size:15px;font-weight:700}
+    .r-entry-meta{font-size:12px;color:#888}
+    .r-entry-sub{font-size:13px;color:#555;margin-bottom:6px}
+    .r-entry-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+    .r-tag{font-family:'JetBrains Mono',monospace;font-size:11px;color:#555;border:1px solid #ddd;padding:2px 8px;border-radius:2px}
+    .r-entry ul{padding-left:18px;margin-top:6px}
+    .r-entry li{font-size:13px;color:#333;margin-bottom:4px}
+
+    /* Footer */
+    .r-footer{margin-top:32px;padding-top:16px;border-top:1px solid #e0e0e0;font-size:11px;color:#888;display:flex;justify-content:space-between}
+
+    /* Print button */
+    .print-bar{position:fixed;bottom:0;left:0;right:0;background:#1a1a1a;padding:12px 24px;display:flex;justify-content:center;gap:16px;z-index:10}
+    .print-btn{font-family:'Inter',sans-serif;font-size:14px;font-weight:500;padding:10px 24px;border-radius:4px;cursor:pointer;border:none}
+    .print-btn-primary{background:#fff;color:#1a1a1a}
+    .print-btn-secondary{background:transparent;color:#fff;border:1px solid #555}
+    .print-btn:hover{opacity:.85}
+
+    @media print{
+      body{padding:24px 0;font-size:12px}
+      .print-bar{display:none}
+      .r-header{margin-bottom:20px;padding-bottom:16px}
+      .r-section{margin-bottom:18px}
+    }
+
+    @media(max-width:600px){
+      body{padding:24px 16px 80px}
+      .r-header{flex-direction:column;gap:12px}
+      .r-contacts{text-align:left}
+      .r-skills{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+  <header class="r-header">
+    <div>
+      <h1 class="r-name">Metinov Shoxjaxon</h1>
+      <p class="r-role">Full-Stack Developer</p>
+    </div>
+    <div class="r-contacts">
+      <span>📍 Toshkent, O'zbekiston</span>
+      <a href="https://t.me/shoxa_devv" target="_blank" rel="noopener noreferrer">t.me/shoxa_devv</a>
+      <a href="https://github.com/shoxa-devv" target="_blank" rel="noopener noreferrer">github.com/shoxa-devv</a>
+      <a href="https://www.instagram.com/shoxa_devv" target="_blank" rel="noopener noreferrer">instagram.com/shoxa_devv</a>
+    </div>
+  </header>
+
+  <section class="r-section">
+    <h2 class="r-section-title">Qisqacha</h2>
+    <p class="r-summary">
+      3+ yillik tajribaga ega full-stack dasturchi. Python/Flask asosida backend tizimlar, Telegram botlar va avtomatlashtirilgan biznes yechimlari yarataman. Docker yordamida loyihalarni VPS serverlarga joylashtirish va uzluksiz ishlashini ta'minlash bo'yicha mustahkam tajribaga egaman. Mijozlar bilan yaqin aloqada ishlab, sifatli va muddatli natija beraman.
+    </p>
+  </section>
+
+  <section class="r-section">
+    <h2 class="r-section-title">Texnologiyalar</h2>
+    <div class="r-skills">
+      <div>
+        <p class="r-skill-cat">Backend</p>
+        <p class="r-skill-list mono">Python · Flask · PostgreSQL · REST API · SQLAlchemy</p>
+      </div>
+      <div>
+        <p class="r-skill-cat">DevOps</p>
+        <p class="r-skill-list mono">Docker · Nginx · Linux (Ubuntu) · VPS · CI/CD</p>
+      </div>
+      <div>
+        <p class="r-skill-cat">Avtomatlashtirish</p>
+        <p class="r-skill-list mono">Telegram Bot API · Aiogram · Asyncio · Userbot</p>
+      </div>
+      <div>
+        <p class="r-skill-cat">Frontend</p>
+        <p class="r-skill-list mono">HTML5 · CSS3 · JavaScript (ES6+) · Responsive Design</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="r-section">
+    <h2 class="r-section-title">Loyihalar</h2>
+
+    <div class="r-entry">
+      <div class="r-entry-header">
+        <span class="r-entry-title">Shifo Dent — Stomatologiya Klinikasi Landing Sahifasi</span>
+        <span class="r-entry-meta mono">2025</span>
+      </div>
+      <p class="r-entry-sub">Stomatologiya klinikasi uchun xizmatlar, shifokorlar jamoasi va mijozlar fikrlari bo'limiga ega bo'lgan moslashuvchan landing sahifasi</p>
+      <ul>
+        <li>Barcha mobil qurilmalarga to'liq moslashuvchan (responsive) dizayn</li>
+        <li>Tez yuklanish (Lighthouse 95+) va SEO optimallashtirilgan tuzilish</li>
+        <li>Shifokorlar va mijozlar fikrlari uchun dinamik interaktiv bo'limlar</li>
+      </ul>
+      <div class="r-entry-tags">
+        <span class="r-tag">HTML5</span><span class="r-tag">CSS3</span><span class="r-tag">JavaScript</span><span class="r-tag">Responsive</span>
+      </div>
+    </div>
+
+    <div class="r-entry">
+      <div class="r-entry-header">
+        <span class="r-entry-title">Aura Gold — Premium Barber Shop Landing Sahifasi</span>
+        <span class="r-entry-meta mono">2025</span>
+      </div>
+      <p class="r-entry-sub">Eksklyuziv premium erkaklar saloni uchun yaratilgan hashamatli dizayn va bron qilish imkoniyatiga ega landing sahifasi</p>
+      <ul>
+        <li>Aura Gold premium uslubiga mos keladigan hashamatli qorong'u interfeys dizayni</li>
+        <li>Xizmatlar katalogi, ustalar bilan tanishish va bron qilish tugmasi</li>
+        <li>Mobil telefonlarda ham mukammal responsive moslashuvchanlik</li>
+      </ul>
+      <div class="r-entry-tags">
+        <span class="r-tag">HTML5</span><span class="r-tag">CSS3</span><span class="r-tag">JavaScript</span><span class="r-tag">Responsive</span>
+      </div>
+    </div>
+
+    <div class="r-entry">
+      <div class="r-entry-header">
+        <span class="r-entry-title">Iron Forge — Modern Fitness Club Landing Sahifasi</span>
+        <span class="r-entry-meta mono">2025</span>
+      </div>
+      <p class="r-entry-sub">Professional fitness trenerlari, mashg'ulot dasturlari va a'zolik rejalari uchun ishlab chiqilgan sport landing sahifasi</p>
+      <ul>
+        <li>Mashg'ulot turlari, trenerlar jamoasi va a'zolik paketlari tariflari</li>
+        <li>Tez yuklanuvchi, sport uslubidagi qora-sariq zamonaviy interfeys</li>
+        <li>Barcha planshet va smartfonlar o'lchamlariga moslashuvchanlik</li>
+      </ul>
+      <div class="r-entry-tags">
+        <span class="r-tag">HTML5</span><span class="r-tag">CSS3</span><span class="r-tag">JavaScript</span><span class="r-tag">Responsive</span>
+      </div>
+    </div>
+
+    <div class="r-entry">
+      <div class="r-entry-header">
+        <span class="r-entry-title">Savor & Soul — Premium Restaurant Landing Sahifasi</span>
+        <span class="r-entry-meta mono">2025</span>
+      </div>
+      <p class="r-entry-sub">Premium darajadagi restoran uchun yaratilgan menyu taqdimoti va stol band qilish tizimiga ega landing sahifasi</p>
+      <ul>
+        <li>Shinamilik va gastronomik san'at uyg'unligini ifodalovchi estetik dizayn</li>
+        <li>Taomlar menyusi, restoran muhiti galereyasi va stol band qilish (bron qilish) interfeysi</li>
+        <li>Barcha qurilmalar va ekran o'lchamlari uchun responsive tartib</li>
+      </ul>
+      <div class="r-entry-tags">
+        <span class="r-tag">HTML5</span><span class="r-tag">CSS3</span><span class="r-tag">JavaScript</span><span class="r-tag">Responsive</span>
+      </div>
+    </div>
+
+    <div class="r-entry">
+      <div class="r-entry-header">
+        <span class="r-entry-title">CS2Skins — Steam Skin Trading Platforma</span>
+        <span class="r-entry-meta mono">2025</span>
+      </div>
+      <p class="r-entry-sub">CS2 o'yini skinlarini Steam API orqali tez va xavfsiz sotish hamda sotib olish platformasi</p>
+      <ul>
+        <li>Steam hisobini ulash, narxlarni solishtirish va avtomatik savdolar integratsiyasi</li>
+        <li>Boshqa o'yinlar (Dota 2, Rust, TF2) uchun ham oson moslashtirilishi mumkin bo'lgan universal tuzilma</li>
+        <li>Dinamik va o'yin uslubidagi to'q rangli interfeys va responsive dizayn</li>
+      </ul>
+      <div class="r-entry-tags">
+        <span class="r-tag">HTML5</span><span class="r-tag">CSS3</span><span class="r-tag">JavaScript</span><span class="r-tag">Steam API</span><span class="r-tag">Responsive</span>
+      </div>
+    </div>
+
+    <div class="r-entry">
+      <div class="r-entry-header">
+        <span class="r-entry-title">Apex Academy — Modern Education Center Landing Sahifasi</span>
+        <span class="r-entry-meta mono">2025</span>
+      </div>
+      <p class="r-entry-sub">O'quv markazlari va akademiyalar uchun til o'rganish metodikalarini taqdim etuvchi sahifa</p>
+      <ul>
+        <li>Faol guruhlarga yozilish, o'quv dasturlari va bepul sinov darsi arizasi shakli</li>
+        <li>Markaz o'qituvchilari jamoasi, dars metodikasi va bitiruvchilar natijalari vizualizatsiyasi</li>
+        <li>Yuqori tezlikda yuklanish va qulay foydalanuvchi interfeysi</li>
+      </ul>
+      <div class="r-entry-tags">
+        <span class="r-tag">HTML5</span><span class="r-tag">CSS3</span><span class="r-tag">JavaScript</span><span class="r-tag">Responsive</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="r-section">
+    <h2 class="r-section-title">Xizmatlar</h2>
+    <ul style="padding-left:18px">
+      <li>Veb-saytlar va Landing Page ishlab chiqish</li>
+      <li>Telegram botlar — avtomatlashtirish va to'lov integratsiyasi</li>
+      <li>Backend tizimlar — Flask, REST API, PostgreSQL</li>
+      <li>Admin panel va boshqaruv dashboardlari</li>
+      <li>Docker konteynerizatsiya va VPS deployment</li>
+    </ul>
+  </section>
+
+  <section class="r-section">
+    <h2 class="r-section-title">Tillar</h2>
+    <ul style="padding-left:18px">
+      <li>O'zbek tili — Ona tili</li>
+      <li>Rus tili — Yaxshi</li>
+      <li>Ingliz tili — O'rta (texnik hujjatlar o'qish, yozishmalar)</li>
+    </ul>
+  </section>
+
+  <footer class="r-footer">
+    <span>© 2026 Metinov Shoxjaxon</span>
+    <span class="mono">shoxjaxon.uz</span>
+  </footer>
+
+  <!-- Print bar -->
+  <div class="print-bar">
+    <button class="print-btn print-btn-primary" onclick="window.print()">📄 PDF sifatida saqlash</button>
+    <a href="index.html" class="print-btn print-btn-secondary" style="text-decoration:none;display:inline-flex;align-items:center">← Portfolioga qaytish</a>
+  </div>
+
+</body>
+</html>

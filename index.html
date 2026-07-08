@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Metinov Shoxjaxon — Full-Stack Developer. Python, Flask, Docker, Telegram Bot.">
+  <title>Metinov Shoxjaxon | Full-Stack Developer</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a0a0a'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700' font-size='18'%3ES%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">SHOXJAXON</a>
+
+      <div class="header-meta mono">
+        <span id="location-label" data-i18n="location">🟢 Toshkent, O'zbekiston</span>
+        <span class="meta-sep">—</span>
+        <span id="clock">00:00:00</span>
+      </div>
+
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="#projects" class="nav-link" data-i18n="nav_projects">Loyihalar</a></li>
+          <li><a href="#stack" class="nav-link" data-i18n="nav_stack">Texnologiyalar</a></li>
+          <li><a href="#contact" class="nav-link nav-cta" data-i18n="nav_contact">Bog'lanish</a></li>
+        </ul>
+        <div class="lang-switch mobile-lang">
+          <button class="lang-btn active" data-lang="uz">UZ</button>
+          <span class="lang-sep">/</span>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <span class="lang-sep">/</span>
+          <button class="lang-btn" data-lang="ru">RU</button>
+        </div>
+      </nav>
+
+      <div class="lang-switch desktop-lang">
+        <button class="lang-btn active" data-lang="uz">UZ</button>
+        <span class="lang-sep">/</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <span class="lang-sep">/</span>
+        <button class="lang-btn" data-lang="ru">RU</button>
+      </div>
+
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-inner">
+        <span class="hero-label mono anim-up anim-d1" data-i18n="hero_badge">Full-Stack Developer</span>
+        <h1 class="hero-title anim-up anim-d2" data-i18n="hero_title">METINOV SHOXJAXON</h1>
+        <p class="hero-desc anim-up anim-d3" data-i18n="hero_desc">Backend'dan frontend'gacha, g'oyadan productiongacha — Python/Flask, Docker va Telegram avtomatlashtirish orqali biznes muammolarini hal qilaman.</p>
+
+        <div class="stats anim-up anim-d4">
+          <div class="stat">
+            <span class="stat-value mono" data-i18n="stat1_val">15+</span>
+            <span class="stat-key mono" data-i18n="stat1_key">loyiha</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value mono" data-i18n="stat2_val">3+</span>
+            <span class="stat-key mono" data-i18n="stat2_key">yil tajriba</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value mono" data-i18n="stat3_val">100%</span>
+            <span class="stat-key mono" data-i18n="stat3_key">mijoz mamnunligi</span>
+          </div>
+        </div>
+
+        <div class="hero-ctas anim-up anim-d5">
+          <a href="#projects" class="btn btn-solid" data-i18n="cta_projects">Loyihalarni ko'rish</a>
+          <a href="#contact" class="btn btn-outline" data-i18n="cta_contact">Bog'lanish</a>
+          <a href="resume.html" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" data-i18n="cta_resume">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            Resume (PDF)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROCESS ========== -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="two-col">
+        <div class="col-left reveal">
+          <span class="sec-num mono">/01</span>
+          <h2 class="sec-title" data-i18n="process_title">Ish Jarayonim</h2>
+        </div>
+        <div class="col-right reveal reveal-d1">
+          <div class="process-steps">
+            <div class="step">
+              <span class="step-num mono">01</span>
+              <h3 class="step-name" data-i18n="step1_name">Suhbat</h3>
+              <p class="step-desc" data-i18n="step1_desc">Loyiha maqsadi, muddatlari va texnik talablarni batafsil muhokama qilamiz.</p>
+            </div>
+            <div class="step">
+              <span class="step-num mono">02</span>
+              <h3 class="step-name" data-i18n="step2_name">Tahlil va Rejalashtirish</h3>
+              <p class="step-desc" data-i18n="step2_desc">Texnik arxitektura, ma'lumotlar bazasi va API tuzilmasini loyihalashtiraman.</p>
+            </div>
+            <div class="step">
+              <span class="step-num mono">03</span>
+              <h3 class="step-name" data-i18n="step3_name">Ishlab Chiqish</h3>
+              <p class="step-desc" data-i18n="step3_desc">Toza va kengayuvchan kod yozish, har bosqichda natijani mijozga ko'rsatish.</p>
+            </div>
+            <div class="step">
+              <span class="step-num mono">04</span>
+              <h3 class="step-name" data-i18n="step4_name">Topshirish va Qo'llab-quvvatlash</h3>
+              <p class="step-desc" data-i18n="step4_desc">Serverga joylashtirish, test, hujjatlashtirish va keyingi texnik yordam.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STACK ========== -->
+  <section class="section" id="stack">
+    <div class="container">
+      <div class="two-col">
+        <div class="col-left reveal">
+          <span class="sec-num mono">/02</span>
+          <h2 class="sec-title" data-i18n="stack_title">Texnologiyalar</h2>
+        </div>
+        <div class="col-right reveal reveal-d1">
+          <div class="cat">
+            <h3 class="cat-label" data-i18n="stack_backend">Backend</h3>
+            <p class="cat-items mono">Python / Flask / PostgreSQL / REST API</p>
+          </div>
+          <div class="cat">
+            <h3 class="cat-label" data-i18n="stack_devops">DevOps</h3>
+            <p class="cat-items mono">Docker / VPS / Nginx / Linux</p>
+          </div>
+          <div class="cat">
+            <h3 class="cat-label" data-i18n="stack_auto">Avtomatlashtirish</h3>
+            <p class="cat-items mono">Telegram Bot API / Aiogram / Asyncio</p>
+          </div>
+          <div class="cat">
+            <h3 class="cat-label" data-i18n="stack_frontend">Frontend</h3>
+            <p class="cat-items mono">HTML5 / CSS3 / JavaScript / Responsive</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="reveal">
+        <span class="sec-num mono">/03</span>
+        <h2 class="sec-title" data-i18n="projects_title">Loyihalar</h2>
+        <p class="sec-sub" data-i18n="projects_sub">Dasturlash sohasidagi so'nggi ishlarim va amaliy yechimlar.</p>
+      </div>
+      <div id="projects-list" class="projects-list"></div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="reveal">
+        <span class="sec-num mono">/04</span>
+        <h2 class="sec-title" data-i18n="test_title">Mijozlar Fikri</h2>
+      </div>
+      <div class="test-grid" id="testimonials-list"></div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section section--no-border" id="contact">
+    <div class="container">
+      <div class="reveal">
+        <span class="sec-num mono">/05</span>
+        <h2 class="contact-heading" data-i18n="contact_title">Keyingi loyihangizni muhokama qilaylik</h2>
+        <p class="sec-sub" data-i18n="contact_desc">Telegram yoki Instagram orqali darhol bog'laning. G'oyangizni amalga oshirishga tayyorman.</p>
+      </div>
+      <div class="contact-cards">
+        <a href="https://t.me/shoxa_devv" target="_blank" rel="noopener noreferrer" class="c-card reveal">
+          <div class="c-card-top">
+            <svg class="c-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.2 4.6 2.5 11.1c-.6.2-.6.7 0 .9l4.6 1.7 1.8 5.6c.1.4.6.5.9.2l2.6-2.1 5 3.7c.5.4 1.2.1 1.3-.5L22 5.5c.2-.7-.4-1.2-.8-.9z"/><path d="m9.1 13.7 8.1-6.2"/></svg>
+            <h3 class="c-card-name" data-i18n="tg_dm_name">Telegram (Shaxsiy)</h3>
+          </div>
+          <p class="c-card-text" data-i18n="tg_dm_text">To'g'ridan-to'g'ri shaxsiy yozishmada loyihani muhokama qilish.</p>
+          <span class="c-card-url mono">t.me/shoxa_devv</span>
+        </a>
+        <a href="https://www.instagram.com/shoxa_devv?igsh=MWJ1Z2ZndDg5Z2M1bQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" class="c-card reveal reveal-d1">
+          <div class="c-card-top">
+            <svg class="c-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            <h3 class="c-card-name" data-i18n="insta_name">Instagram</h3>
+          </div>
+          <p class="c-card-text" data-i18n="insta_text">Shaxsiy blog va ish faoliyatim.</p>
+          <span class="c-card-url mono">@shoxa_devv</span>
+        </a>
+        <a href="https://t.me/shoxjaxon_metinov" target="_blank" rel="noopener noreferrer" class="c-card reveal reveal-d2">
+          <div class="c-card-top">
+            <svg class="c-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6 2 10.5c0 2.7 1.5 5.1 3.8 6.7L5 22l3.8-2.3c1 .3 2.1.5 3.2.5 5.52 0 10-4 10-8.5S17.52 2 12 2z"/><path d="m9 10 3 3 5-5"/></svg>
+            <h3 class="c-card-name" data-i18n="chan_name">Telegram Kanal</h3>
+          </div>
+          <p class="c-card-text" data-i18n="chan_text">Portfolio, yangiliklar va dasturlash postlari.</p>
+          <span class="c-card-url mono">t.me/shoxjaxon_metinov</span>
+        </a>
+        <a href="https://github.com/shoxa-devv" target="_blank" rel="noopener noreferrer" class="c-card reveal reveal-d1">
+          <div class="c-card-top">
+            <svg class="c-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <h3 class="c-card-name">GitHub</h3>
+          </div>
+          <p class="c-card-text" data-i18n="github_text">Ochiq manba kodlarim va loyihalarim.</p>
+          <span class="c-card-url mono">github.com/shoxa-devv</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BACK TO TOP ========== -->
+  <button class="back-top" id="back-top" aria-label="Tepaga">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-copy">&copy; 2026 Metinov Shoxjaxon. <span data-i18n="footer_rights">Barcha huquqlar himoyalangan.</span></span>
+      <div class="footer-links">
+        <a href="https://t.me/shoxa_devv" target="_blank" rel="noopener noreferrer">Telegram</a>
+        <a href="https://www.instagram.com/shoxa_devv?igsh=MWJ1Z2ZndDg5Z2M1bQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://t.me/shoxjaxon_metinov" target="_blank" rel="noopener noreferrer" data-i18n="footer_channel">Kanal</a>
+        <a href="https://github.com/shoxa-devv" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
